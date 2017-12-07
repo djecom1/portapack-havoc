@@ -269,9 +269,9 @@ ADSBRxView::ADSBRxView(NavigationView& nav) {
 	baseband::set_adsb();
 	
 	receiver_model.set_tuning_frequency(1090000000);
-	receiver_model.set_rf_amp(true);
+	receiver_model.set_rf_amp(false);
 	field_lna.set_value(40);
-	field_vga.set_value(40);
+	field_vga.set_value(48);
 	receiver_model.set_modulation(ReceiverModel::Mode::SpectrumAnalysis);
 	receiver_model.set_sampling_rate(2000000);
 	receiver_model.set_baseband_bandwidth(2500000);
